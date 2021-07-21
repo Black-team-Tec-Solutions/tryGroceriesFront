@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+import { Component } from 'react';
 import './App.css';
+import NavBar from './app/components/NavBar';
+import SubMenu from './app/components/SubMenu';
+import Routes from './Routes';
+import { withRouter } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  render (){
+    let { pathname } = this.props.location
+   
+    if (pathname === "/main") {
+      return (    
+        <div className="App">
+          <NavBar/>
+            <div>
+              <SubMenu/>
+              <Routes/>
+            </div>
+        </div>
+      )
+    } else {
+      return (
+        <div className="App">
+          <Routes/>
+        </div>
+      )
+    }
+
+  }
 }
 
-export default App;
+const appWithRouter = withRouter(App)
+export default appWithRouter;
