@@ -53,15 +53,21 @@ export default class Auth extends Component{
 
 
         return(
-            <div className="container d-flex align-items-center flex-column cont-test">
+            <div className=" masthead container d-flex align-items-center flex-column cont-test">
                 <form onSubmit={handleSubmit}>               
                     <img className="masthead-avatar mb-5" src={image} height="300px" width="300px" alt="..." />
                     <div className="sect1">
-                    <p className="masthead-heading text-uppercase mb-0">¿Cuantos dias realizaras tu dieta?<NumberInput name="days" min="0" max="7" handleChange={handleChange}/></p>
+                        <p>Nos encanta la salud y bienestar de las personas, a favor de ello esta aplicacion
+                    te mostrara rutinas de ejercicio divididas por grupos musculares, aprenderas la tecnica, ganaras condicion y fuerza
+                    ideales para mantenerte saludable y en forma.</p>
+                    {/* <p className="masthead-heading text-uppercase mb-0"><NumberInput name="days" min="0" max="7" handleChange={handleChange}/></p>
                     </div>
-                    <p className="masthead-heading text-uppercase mb-0">¿Cuantas comidas al dia vas a consumir?<NumberInput name="mealNum" min="0" max="9" handleChange={handleChange}/></p>
-                    
-                    <Button text='Siguiente'/>
+                    <p className="masthead-heading text-uppercase mb-0">¿Cuantas comidas al dia vas a consumir?<NumberInput name="mealNum" min="0" max="9" handleChange={handleChange}/></p> */}
+                    </div>
+                    <div className="boton">
+                    <button type="button" className=" btn btn-secondary btn-lg"><a class="text-decoration-none text-white" href="/">Regresar</a></button>
+                    {/* <Button text='Siguiente'/> */}
+                    </div>
                 </form>
             </div> 
         )

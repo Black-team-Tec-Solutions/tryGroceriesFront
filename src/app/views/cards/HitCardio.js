@@ -8,7 +8,7 @@ import image from '../../assets/image/jump.png'
 const HitCardio = ()=>(
    
 
-    <section className="page-section portfolio" id="portfolio">
+    <section className="page page-section portfolio" id="portfolio">
             <div className="container">
                 
                 <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">Entrenamientos para Cardio HIT</h2>

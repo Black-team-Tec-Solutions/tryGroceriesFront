@@ -2,27 +2,18 @@
 
 p{
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     color:#ffff;
     
 }
 
-.sect1{
-    margin: 40px, 50px, 20px, 50px;
-    padding-bottom: 90px;
+.boton {
+margin: -10%;
+
 }
 
-.box{
-    margin-left: 12px;
-    border-color: #00ba94 ;
-    border-radius: 5px;
-}
 
-.btn {
-    margin-top: 50px;
-    
-}
 
-.container {
-    margin-top: -5%;
-}
+
+
+

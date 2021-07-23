@@ -68,7 +68,8 @@ export default class Auth extends Component{
 
         return(
             <section className="auth-container">
-                <div className="card">
+                    <div className="container-form" id="container">
+                        <div className="form-container sign-in-container">
                     <form onSubmit={handleSubmit}>
                         <img src={logo} width='20%'/>
 
@@ -77,14 +78,14 @@ export default class Auth extends Component{
                         <TextInput
                             name="name"
                             textLabel='Nombre'
-                            placeholder='Juan Perez'
+                            placeholder='Yanet Padilla'
                             handleChange={handleChange}
                         />}
 
                         <TextInput
                         name="email"
                         textLabel='Correo Electornico'
-                        placeholder='luis@gmail.com'
+                        placeholder='adgroceries@gmail.com'
                         handleChange={handleChange}
                         
                         />
@@ -92,7 +93,7 @@ export default class Auth extends Component{
 
                         <TextInput
                             name="password"
-                            textLabel='Contrasena'
+                            textLabel='Contraseña'
                             type='password'
                             placeholder='.........'
                             handleChange={handleChange}
@@ -102,24 +103,26 @@ export default class Auth extends Component{
                         
                         <TextInput
                             name="confirmPassword"
-                            textLabel='Confirma la contrasena'
+                            textLabel='Confirma la contraseña'
                             type='password'
                             placeholder='.........'
                             handleChange={handleChange}
                         />}
-                        <Button
-                        text='Registrate'
-                        />
+                        
+                        <Button text={`${match.path === "/signup" ? "Registrar" : "Ingresar"}`}/>
                         
                         
                         
                     </form>
-                    <span> {`${
-                        match.path !== '/signup' ? "Aun no" : 'Ya'
-                    } tienes cuenta? |`}
-                        <Link to={match.path !== "/signup" ? "/signup" :"/login" }>Dale aqui</Link>
-                    </span>
+                    <div className="span-container">
+                                    <span> {`${match.path !== '/signup' ? "¿No ta has registrado?" : '¿Ya tienes cuenta?'} | `}
+                                        <Link to={match.path !== "/signup" ? "/signup" :"/login" }>
+                                        Pulsa aqui</Link>
+                                    </span>
+                                </div>
                 </div>
+            
+            </div>
             </section>
         )
     }
