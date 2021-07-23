@@ -22,7 +22,7 @@ const Home = ({history,location,match}) => (
                         <li className="nav-item mx-0 mx-lg-1"><a className="text-white nav-link py-3 px-0 px-lg-3 rounded" href="/onboarding/firstStep">Acerca de AdGroceries</a></li>
                         
                         <li className="nav-item mx-0 mx-lg-1"><a className="text-white nav-link py-3 px-0 px-lg-3 rounded" href="/signup"><Link to="/signup">Registrate</Link></a></li>
-                        <li className="nav-item mx-0 mx-lg-1"><a className="text-white nav-link py-3 px-0 px-lg-3 rounded" href="/login"><Link to="/login">Inicia sesión</Link></a></li>
+                        <li className="nav-item mx-0 mx-lg-1"><a className="text-white nav-link py-3 px-0 px-lg-3 rounded" href="/login"><Link to="/login">Iniciar sesión</Link></a></li>
                     </ul>
                 
             </div>
