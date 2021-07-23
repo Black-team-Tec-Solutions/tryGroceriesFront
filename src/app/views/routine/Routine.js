@@ -9,13 +9,14 @@ import image2 from '../../assets/image/jump.png'
 const Routine = ()=>(
    
 
-    <section className="page-section portfolio" id="portfolio">
-            <div className="container">
+    <section className="page page-section portfolio" id="portfolio">
+            <div className="container cuadroverde">
                 
                 <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">Entrenamientos</h2>
-                <p>Estos seran tus entrenamientos basicos para mantenerte saludable y en forma,
+                <p className="text">Estos seran tus entrenamientos basicos para mantenerte saludable y en forma,
                     obtendras mayor condicion, fuerza y tecnica al realizar tus entrenos.
                 </p>
+                
                 
 
 
@@ -33,9 +34,11 @@ const Routine = ()=>(
                             <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div className="portfolio-item-caption-content text-center text-white"><i className="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img className="img-fluid" src={image} alt="..." />
+                            <img className="img-fluid img-rounded" src={image} alt="..." />
                         </div>
+                        <div className="butbot">
                         <button type="button" class="btn btn-secondary btn-lg"><a href="/workout/superior" class="text-decoration-none text-white">Tren superior</a></button>
+                    </div>
                     </div>
                     
                     <div className="col-md-6 col-lg-4 mb-5">
@@ -43,9 +46,11 @@ const Routine = ()=>(
                             <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div className="portfolio-item-caption-content text-center text-white"><i className="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img className="img-fluid" src={image1}alt="..." />
+                            <img className="img-fluid img-rounded"  src={image1}alt="..." />
                         </div>
+                        <div className="butbot">
                         <button type="button" class="btn btn-secondary btn-lg"><a class="text-decoration-none text-white" href="/workout/inferior">Tren Inferior</a></button>
+                    </div>
                     </div>
                     
                     <div className="col-md-6 col-lg-4 mb-5">
@@ -53,14 +58,21 @@ const Routine = ()=>(
                             <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div className="portfolio-item-caption-content text-center text-white"><i className="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img className="img-fluid" src={image2} alt="..." />
+                            <div className="ajust">
+                            <img className="img-fluid img-rounded" src={image2} alt="..." />
                         </div>
-                        <button type="button" class="btn btn-secondary btn-lg"><a class="text-decoration-none text-white" href="/workout/cardio">Cardio HIT</a></button>
+                        </div>
+                        <div className="butbot1">
+                        <button type="button" className="btn btn-secondary btn-lg"><a className="text-decoration-none text-white" href="/workout/cardio">Cardio HIT</a></button>
                     </div>
-                
-                    <button type="button" class="btn btn-secondary btn-lg"><a class="text-decoration-none text-white" href="/onboarding">Regresar</a></button>
-                    <button type="button" class="btn btn-secondary btn-lg"><a class="text-decoration-none text-white" href="">Cerrar sesion</a></button>
                     </div>
+                    </div>
+                    <div className="dosbotones">
+                    <button type="button" className="botton btn btn-secondary btn-lg"><a className="text-decoration-none text-white" href="/onboarding">Regresar</a></button>
+                    
+                    <button type="button" className="botton btn btn-secondary btn-lg"><a className="text-decoration-none text-white" href="">Cerrar sesion</a></button>
+                    </div>
+                    
                 
             </div>
         </section>
