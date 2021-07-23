@@ -21,7 +21,7 @@ const Welcome = () => (
                
                 <p className="masthead-subheading font-weight-light mb-0">Ya eres parte de AdGroceries</p>
 
-                <button type="button" className="btn btn-secondary btn-lg"><Link to="onboarding/firstStep">Alimentacion</Link></button>
+                <button type="button" class="btn btn-secondary btn-lg"><a class="text-decoration-none text-white" href="/workout/routine">Ver mi rutina</a></button>
 
             </div> 
 )
