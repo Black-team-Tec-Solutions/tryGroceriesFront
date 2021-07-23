@@ -4,13 +4,13 @@ import logo from '../../assets/image/logo.png'
 import TextInput from '../../components/TextInput';
 import Button from '../../components/Button'
 import {Link} from 'react-router-dom'
-import {signupPoint, loginPoint} from '../../services/auth-ws'
+import {signupEndpoint, loginEndpoint} from '../../services/auth-ws'
 
 
 export default class Auth extends Component{
     state={
         user:{
-            nombre: '',
+            name: '',
             email:'',
             password:'',
             confirmPassword:''
@@ -22,24 +22,26 @@ export default class Auth extends Component{
         const {name, value} = e.target
          user[name] = value
          this.setState({ user })
+         console.log(user)
     }
 
     handleSubmit = (e) => {
         const {match,history} = this.props
         const {user} = this.state
         e.preventDefault()
-        match.path === "/signup" ? signupPoint(user)
+        match.path === "/signup" ? signupEndpoint(user)
         .then(
             res => {
                 
                 localStorage.setItem( "user",JSON.stringify(res.data.result) )
             this.props.history.push('/onboarding')
         })
-    .catch(error => (error)): loginPoint(user)
+    .catch(error => (error)): loginEndpoint(user)
     .then(
         res => {
             
             localStorage.setItem( "user",JSON.stringify(res.data.result) )
+            console.log(res.data)
             switch (res.data.result.stage){
                 case 0:
                     this.props.history.push('/onboarding');
@@ -55,10 +57,7 @@ export default class Auth extends Component{
                 break;
             }
     })
-        .catch(error => (error))
-
-        
-        
+        .catch(error => (error)) 
     }
 
     render(){
@@ -76,7 +75,7 @@ export default class Auth extends Component{
                         {match.path === "/signup" && 
                         
                         <TextInput
-                            name="nombre"
+                            name="name"
                             textLabel='Nombre'
                             placeholder='Juan Perez'
                             handleChange={handleChange}

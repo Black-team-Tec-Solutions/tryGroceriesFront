@@ -14,11 +14,11 @@ class App extends Component {
     if (pathname === "/main") {
       return (    
         <div className="App">
-          <NavBar/>
-            <div>
-              <SubMenu/>
+          {/*<NavBar/>*/}
+    
+              {/*<SubMenu/>*/}
               <Routes/>
-            </div>
+
         </div>
       )
     } else {
