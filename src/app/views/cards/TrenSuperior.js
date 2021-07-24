@@ -8,7 +8,7 @@ import image from '../../assets/image/weight.png'
 const TrenSuperior = ()=>(
    
 
-    <section className="page-section portfolio" id="portfolio">
+    <section className="page page-section portfolio" id="portfolio">
             <div className="container">
                 
                 <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">Entrenamientos para tren superior</h2>
@@ -39,7 +39,7 @@ const TrenSuperior = ()=>(
                             <img className="img-fluid" src={image} alt="..." />
                         </div>
                         <button type="button" class="btn btn-secondary btn-lg"><a class="text-decoration-none text-white" href="https://www.youtube.com/watch?v=Ud7lP6PF6u4&ab_channel=SilvyAraujo">Espalda, Biceps, Abdominales</a></button>
-                        <button type="button" class="btn btn-secondary btn-lg"><a class="text-decoration-none text-white" href="https://www.youtube.com/watch?v=Ud7lP6PF6u4&ab_channel=SilvyAraujo">Hombros, Triceps, Abdominales</a></button>
+                        <button type="button" class="btn btn-secondary btn-lg"><a class="text-decoration-none text-white" href="https://www.youtube.com/watch?v=UggDB3iAyjA&t=4s&ab_channel=SilvyAraujo">Hombros, Triceps, Abdominales</a></button>
                         <button type="button" class="btn btn-secondary btn-lg"><a class="text-decoration-none text-white" href="/workout/routine">Regresar</a></button>
 
                         

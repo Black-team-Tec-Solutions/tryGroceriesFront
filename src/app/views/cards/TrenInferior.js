@@ -8,7 +8,7 @@ import image from '../../assets/image/corazon.png'
 const TrenInferior = ()=>(
    
 
-    <section className="page-section portfolio" id="portfolio">
+    <section className="page page-section portfolio" id="portfolio">
             <div className="container">
                 
                 <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">Entrenamientos para tren inferior</h2>
@@ -39,8 +39,9 @@ const TrenInferior = ()=>(
                             <img className="img-fluid" src={image} alt="..." />
                         </div>
                         <button type="button" class="btn btn-secondary btn-lg"><a class="text-decoration-none text-white" href="https://www.youtube.com/watch?v=l9E71aeIg6o&ab_channel=SilvyAraujo">Piernas y Gluteos</a></button>
+                        <div>
                         <button type="button" class="btn btn-secondary btn-lg"><a class="text-decoration-none text-white" href="/workout/routine">Regresar</a></button>
-                        
+                        </div>
                     </div>
                     
                     
